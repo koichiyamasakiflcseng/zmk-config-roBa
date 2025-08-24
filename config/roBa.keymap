@@ -151,9 +151,9 @@
 
         MULTI {
             bindings = <
-&kp PRINTSCREEN  &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                      &kp EQUAL              &kp TILDE          &kp PIPE         &trans  &kp AT_SIGN
-&kp INSERT       &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans  &trans
-&trans           &trans                  &trans              &trans                   &trans  &to 6       &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans  &trans
+&kp PRINTSCREEN  &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                      &kp JP_EQUAL              &kp JP_TILDE          &kp JP_PIPE         &trans  &kp JP_AT
+&kp INSERT       &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &kp JP_LPAREN   &kp JP_LBRACKET   &kp JP_LBRACE   &trans  &trans
+&trans           &trans                  &trans              &trans                   &trans  &to 6       &trans  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_RBRACE  &trans  &trans
 &trans           &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                             &trans
             >;
         };
