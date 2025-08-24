@@ -83,10 +83,10 @@
 &kp Q             &kp W      &kp E         &kp R             &kp T                                        &kp Y  &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S      &kp D         &kp F             &kp G  &mkp MB3         &kp BACKSPACE        &kp H  &kp J  &kp K      &kp L    &lt 5 SQT
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B  &kp ESC          &kp TAB              &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT    &kp LANG5  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 3 SPACE      &mt RIGHT_ALT ENTER  &mo 1                             &kp RIGHT_WIN
+&kp LEFT_SHIFT    &kp GRAVE  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 3 SPACE      &mt RIGHT_ALT ENTER  &mo 1                             &kp RIGHT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         ARROW {
@@ -100,7 +100,7 @@
 
         NUM {
             bindings = <
-&kp CAPSLOCK         &kp F7  &kp F8  &kp F9  &kp F12                      &kp CARET     &kp N7        &kp N8        &kp NUMBER_9  &kp KP_MINUS
+&kp CAPS             &kp F7  &kp F8  &kp F9  &kp F12                      &kp CARET     &kp N7        &kp N8        &kp NUMBER_9  &kp KP_MINUS
 &kp LA(F4)           &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
 &kp INTERNATIONAL_5  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans               &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                  &kp KP_MULTIPLY
