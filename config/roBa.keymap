@@ -142,7 +142,7 @@
 
         NUM {
             bindings = <
-&kp CAPSLOCK         &kp F7  &kp F8  &kp F9  &kp F12                      &kp CARET     &kp N7        &kp N8        &kp NUMBER_9  &kp KP_MINUS
+&kp CAPSLOCK         &kp F7  &kp F8  &kp F9  &kp F12                      &kp JP_EQUAL     &kp N7        &kp N8        &kp NUMBER_9  &kp KP_MINUS
 &kp LA(F4)           &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
 &kp INTERNATIONAL_5  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans               &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                  &kp KP_MULTIPLY
@@ -151,9 +151,9 @@
 
         MULTI {
             bindings = <
-&kp PRINTSCREEN  &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                      &kp JP_EQUAL              &kp JP_TILDE          &kp JP_PIPE         &trans  &kp JP_AT
-&kp INSERT       &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &kp JP_LPAREN   &kp JP_LBRACKET   &kp JP_LBRACE   &trans  &trans
-&trans           &trans                  &trans              &trans                   &trans  &to 6       &trans  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_RBRACE  &trans  &trans
+&kp PRINTSCREEN  &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                      &kp JP_CARET              &kp JP_TILDE          &kp JP_YEN         &kp JP_PIPE  &kp JP_AT
+&kp INSERT       &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &kp JP_LPAREN   &kp JP_LBRACKET   &kp JP_LBRACE   &trans  &kp JP_COLON
+&trans           &trans                  &trans              &trans                   &trans  &to 6       &trans  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_RBRACE  &trans  &kp JP_UNDERSCORE
 &trans           &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                             &trans
             >;
         };
