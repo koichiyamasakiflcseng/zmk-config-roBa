@@ -86,15 +86,15 @@
 &kp LEFT_SHIFT    &kp LANG5  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 3 SPACE      &mt RIGHT_ALT ENTER  &mo 1                             &kp RIGHT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         ARROW {
             bindings = <
-&trans     &trans     &trans     &kp LG(R)  &trans                         &trans         &kp HOME        &kp UP_ARROW    &kp END    &kp MINUS
-&trans     &trans     &kp LG(D)  &kp LC(F)  &trans     &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DELETE
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &trans  &trans         &trans          &trans          &trans     &kp PAGE_UP
-&trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                    &kp PAGE_DOWN
+&trans  &trans     &trans     &kp LG(R)  &trans                         &trans         &kp HOME        &kp UP_ARROW    &kp END    &kp MINUS
+&trans  &trans     &kp LG(D)  &kp LC(F)  &trans     &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DELETE
+&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &trans  &trans         &trans          &trans          &trans     &kp PAGE_UP
+&trans  &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                    &kp PAGE_DOWN
             >;
         };
 
@@ -120,7 +120,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
