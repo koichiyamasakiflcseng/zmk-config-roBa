@@ -95,6 +95,27 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        org_macro0: org_macro0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "ORG_MACRO0";
+        };
+
+        org_macro1: org_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            label = "ORG_MACRO1";
+        };
+
+        org_macro2: org_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "ORG_MACRO2";
+        };
     };
 
     behaviors {
@@ -158,10 +179,10 @@
 
         MULTI {
             bindings = <
-&kp PRINTSCREEN      &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &none                       &kp JP_CARET   &kp JP_TILDE     &kp JP_YEN     &kp JP_PIPE  &kp JP_AT
-&kp INSERT           &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &none   &trans      &trans  &kp JP_LPAREN  &kp JP_LBRACKET  &kp JP_LBRACE  &none        &kp JP_COLON
-&kp INTERNATIONAL_5  &none                   &none               &none                    &none   &trans      &trans  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_RBRACE  &none        &kp JP_UNDERSCORE
-&trans               &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                      &kp RIGHT_WIN
+&kp PRINTSCREEN      &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &none                       &kp JP_CARET  &kp JP_TILDE  &kp JP_YEN   &kp JP_PIPE  &kp JP_AT
+&kp INSERT           &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &none   &trans      &trans  &none         &org_macro0   &org_macro2  &org_macro1  &kp JP_COLON
+&kp INTERNATIONAL_5  &none                   &none               &none                    &none   &trans      &trans  &none         &none         &none        &none        &kp JP_UNDERSCORE
+&trans               &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
