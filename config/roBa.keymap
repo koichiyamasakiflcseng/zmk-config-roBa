@@ -64,33 +64,28 @@
     combos {
         compatible = "zmk,combos";
 
-// Mod by Koichi YAMASAKI
-//        tab {
-//            bindings = <&kp TAB>;
-//            key-positions = <11 12>;
-//        };
-
-//        shift_tab {
-//            bindings = <&kp LS(TAB)>;
-//            key-positions = <12 13>;
-//        };
-
-//        muhennkann {
-//            bindings = <&to_layer_0 INT_MUHENKAN>;
-//            key-positions = <11 10>;
-//        };
-
-//        double_quotation {
-//            bindings = <&kp DOUBLE_QUOTES>;
-//            key-positions = <20 21>;
-//        };
-
-//        eq {
-//            bindings = <&kp EQUAL>;
-//            key-positions = <24 25>;
-//        };
-// Mod by Koichi YAMASAKI END
-
+        // Mod by Koichi YAMASAKI
+        //        tab {
+        //            bindings = <&kp TAB>;
+        //            key-positions = <11 12>;
+        //        };
+        //        shift_tab {
+        //            bindings = <&kp LS(TAB)>;
+        //            key-positions = <12 13>;
+        //        };
+        //        muhennkann {
+        //            bindings = <&to_layer_0 INT_MUHENKAN>;
+        //            key-positions = <11 10>;
+        //        };
+        //        double_quotation {
+        //            bindings = <&kp DOUBLE_QUOTES>;
+        //            key-positions = <20 21>;
+        //        };
+        //        eq {
+        //            bindings = <&kp EQUAL>;
+        //            key-positions = <24 25>;
+        //        };
+        // Mod by Koichi YAMASAKI END
     };
 
     macros {
@@ -99,6 +94,27 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        org_macro0: org_macro0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "ORG_MACRO0";
+        };
+
+        org_macro1: org_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            label = "ORG_MACRO1";
+        };
+
+        org_macro2: org_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            label = "ORG_MACRO2";
         };
     };
 
@@ -130,10 +146,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W          &kp E         &kp R             &kp T                                        &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S          &kp D         &kp F             &kp G  &mkp MB3         &none                &kp H  &kp J  &kp K      &kp L    &lt 5 SEMICOLON
-&mt LEFT_SHIFT Z           &kp X          &kp C         &kp V             &kp B  &lt 6 ESC        &kp BACKSPACE        &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT  &kp JP_HANZEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 3 SPACE      &mt RIGHT_ALT ENTER  &mo 1                             &kp RIGHT_WIN
+&kp Q             &kp W          &kp E         &kp R             &kp T                                        &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S          &kp D         &kp F             &kp G  &mkp MB3         &none                &kp H  &kp J  &kp K      &kp L    &lt 5 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X          &kp C         &kp V             &kp B  &lt 6 ESC        &kp BACKSPACE        &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LEFT_SHIFT    &kp JP_HANZEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 2  &lt 3 SPACE      &mt RIGHT_ALT ENTER  &mo 1                             &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>; // Mod by Koichi YAMASAKI
@@ -163,10 +179,10 @@
 
         MULTI {
             bindings = <
-&kp PRINTSCREEN      &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &none                       &kp JP_CARET   &kp JP_TILDE     &kp JP_YEN     &kp JP_PIPE  &kp JP_AT
-&kp INSERT           &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &none   &trans      &trans  &kp JP_LPAREN  &kp JP_LBRACKET  &kp JP_LBRACE  &none        &kp JP_COLON
-&kp INTERNATIONAL_5  &none                   &none               &none                    &none   &trans      &trans  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_RBRACE  &none        &kp JP_UNDERSCORE
-&trans               &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                      &kp RIGHT_WIN
+&kp PRINTSCREEN      &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &none                       &kp JP_CARET  &kp JP_TILDE  &kp JP_YEN   &kp JP_PIPE  &kp JP_AT
+&kp INSERT           &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &none   &trans      &trans  &none         &org_macro0   &org_macro2  &org_macro1  &kp JP_COLON
+&kp INTERNATIONAL_5  &none                   &none               &none                    &none   &trans      &trans  &none         &none         &none        &none        &kp JP_UNDERSCORE
+&trans               &trans                  &trans              &trans                   &trans  &trans      &trans  &trans                                                &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
