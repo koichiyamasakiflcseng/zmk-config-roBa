@@ -99,21 +99,21 @@
         org_macro0: org_macro0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
             label = "ORG_MACRO0";
         };
 
         org_macro1: org_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            bindings = <&kp JP_LBRACKET &kp JP_RBRACKET &kp LEFT_ARROW>;
             label = "ORG_MACRO1";
         };
 
         org_macro2: org_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            bindings = <&kp JP_LBRACE &kp JP_RBRACE &kp LEFT_ARROW>;
             label = "ORG_MACRO2";
         };
     };
